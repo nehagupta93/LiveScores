@@ -1,0 +1,252 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/content"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="net.cubeservices.livescoresapp.LeagueTableSlideFragment"
+    android:background="@drawable/sky">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="320dp"
+        android:layout_centerVertical="true"
+        android:layout_alignParentStart="true"
+        android:background="@drawable/grass">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Position"
+            android:id="@+id/title"
+            style="@style/Base.TextAppearance.AppCompat.Title"
+            android:padding="3dp"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentStart="true"
+            android:textColor="#FFF"
+            android:layout_marginLeft="50dp"
+            android:layout_marginBottom="5dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Team Name"
+            android:textColor="#FFF"
+            style="@style/Base.TextAppearance.AppCompat.Title"
+            android:padding="3dp"
+            android:id="@+id/teamName"
+            android:layout_alignParentTop="true"
+            android:layout_alignEnd="@+id/numberOfWins" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Games:"
+            android:id="@+id/team2"
+            style="@style/Base.TextAppearance.AppCompat.Title"
+            android:padding="3dp"
+            android:layout_below="@+id/title"
+            android:layout_alignParentStart="true"
+            android:textColor="#FFF"
+            android:layout_marginLeft="50dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Wins:"
+            android:id="@+id/wins"
+            style="@style/Base.TextAppearance.AppCompat.Title"
+            android:padding="3dp"
+            android:layout_below="@+id/team2"
+            android:layout_alignParentStart="true"
+            android:textColor="#FFF"
+            android:layout_marginLeft="50dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Draws:"
+            style="@style/Base.TextAppearance.AppCompat.Title"
+            android:id="@+id/draws"
+            android:padding="3dp"
+            android:layout_below="@+id/wins"
+            android:layout_alignParentStart="true"
+            android:textColor="#FFF"
+            android:layout_marginLeft="50dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Losses:"
+            style="@style/Base.TextAppearance.AppCompat.Title"
+            android:id="@+id/losses"
+            android:padding="3dp"
+            android:layout_below="@+id/draws"
+            android:layout_alignParentStart="true"
+            android:textColor="#FFF"
+            android:layout_marginLeft="50dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Points:"
+            style="@style/Base.TextAppearance.AppCompat.Title"
+            android:id="@+id/points"
+            android:padding="3dp"
+            android:layout_below="@+id/losses"
+            android:layout_alignParentStart="true"
+            android:textColor="#FFF"
+            android:layout_marginLeft="50dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Goals:"
+            style="@style/Base.TextAppearance.AppCompat.Title"
+            android:id="@+id/goals"
+            android:padding="3dp"
+            android:layout_below="@+id/points"
+            android:layout_alignParentStart="true"
+            android:textColor="#FFF"
+            android:layout_marginLeft="50dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Goals Against:"
+            style="@style/Base.TextAppearance.AppCompat.Title"
+            android:id="@+id/goalsAgainst"
+            android:padding="3dp"
+            android:layout_below="@+id/goals"
+            android:layout_alignParentStart="true"
+            android:textColor="#FFF"
+            android:layout_marginLeft="50dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Goal Difference:"
+            android:id="@+id/goalsDifference"
+            style="@style/Base.TextAppearance.AppCompat.Title"
+            android:padding="3dp"
+            android:layout_below="@+id/goalsAgainst"
+            android:layout_alignParentStart="true"
+            android:textColor="#FFF"
+            android:layout_marginLeft="50dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Games"
+            android:id="@+id/numberOfGames"
+            android:layout_alignTop="@+id/team2"
+            android:layout_alignParentEnd="true"
+            style="@style/Base.TextAppearance.AppCompat.Title"
+            android:padding="3dp"
+            android:textColor="#FFF"
+            android:layout_marginRight="50dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Wins"
+            android:id="@+id/numberOfWins"
+            android:layout_below="@+id/team2"
+            android:layout_alignParentEnd="true"
+            style="@style/Base.TextAppearance.AppCompat.Title"
+            android:padding="3dp"
+            android:textColor="#FFF"
+            android:layout_marginRight="50dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Draws"
+            android:id="@+id/numberOfDraws"
+            android:layout_alignTop="@+id/draws"
+            android:layout_alignParentEnd="true"
+            style="@style/Base.TextAppearance.AppCompat.Title"
+            android:padding="3dp"
+            android:textColor="#FFF"
+            android:layout_marginRight="50dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Losses"
+            android:id="@+id/numberOfLosses"
+            android:layout_alignTop="@+id/losses"
+            android:layout_alignParentEnd="true"
+            style="@style/Base.TextAppearance.AppCompat.Title"
+            android:padding="3dp"
+            android:textColor="#FFF"
+            android:layout_marginRight="50dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Points"
+            android:id="@+id/numberOfPoints"
+            android:layout_below="@+id/losses"
+            android:layout_alignParentEnd="true"
+            style="@style/Base.TextAppearance.AppCompat.Title"
+            android:padding="3dp"
+            android:textColor="#FFF"
+            android:layout_marginRight="50dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Goals"
+            android:id="@+id/numberOfGoals"
+            android:layout_alignTop="@+id/goals"
+            android:layout_alignParentEnd="true"
+            style="@style/Base.TextAppearance.AppCompat.Title"
+            android:padding="3dp"
+            android:textColor="#FFF"
+            android:layout_marginRight="50dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Goals Against"
+            android:id="@+id/numberOfGoalsAgainst"
+            android:layout_alignTop="@+id/goalsAgainst"
+            android:layout_alignParentEnd="true"
+            style="@style/Base.TextAppearance.AppCompat.Title"
+            android:padding="3dp"
+            android:textColor="#FFF"
+            android:layout_marginRight="50dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Goals Difference"
+            android:id="@+id/numberOfGoalsDifference"
+            android:layout_alignTop="@+id/goalsDifference"
+            android:layout_alignParentEnd="true"
+            style="@style/Base.TextAppearance.AppCompat.Title"
+            android:padding="3dp"
+            android:textColor="#FFF"
+            android:layout_marginRight="50dp" />
+
+        <ImageButton
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:id="@+id/leftButton"
+            android:layout_centerVertical="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginLeft="10dp"
+            android:background="@drawable/ic_chevron_left"
+            />
+
+        <ImageButton
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:id="@+id/rightButton"
+            android:layout_alignTop="@+id/leftButton"
+            android:layout_alignParentEnd="true"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/ic_chevron_right"
+            />
+    </RelativeLayout>
+</RelativeLayout>

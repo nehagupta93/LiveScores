@@ -1,0 +1,109 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/content"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="net.cubeservices.livescoresapp.CricketMatchSlideFragment"
+    android:background="@drawable/sky">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="220dp"
+        android:layout_centerVertical="true"
+        android:layout_alignParentStart="true"
+        android:background="@drawable/grass">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Cricket"
+            android:id="@+id/sport"
+            style="@style/Base.TextAppearance.AppCompat.Title"
+            android:gravity="left"
+            android:padding="5dp"
+            android:textColor="#FFF"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentStart="true" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Team 1"
+            style="@style/Base.TextAppearance.AppCompat.Title"
+            android:id="@+id/team1"
+            android:padding="5dp"
+            android:textColor="#FFF"
+            android:layout_above="@+id/leftButton"
+            android:layout_alignParentStart="true"
+            android:layout_marginLeft="50dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="@style/Base.TextAppearance.AppCompat.Title"
+            android:padding="5dp"
+            android:textColor="#FFF"
+            android:text="VS"
+            android:id="@+id/vs"
+            android:layout_below="@+id/team1"
+            android:layout_alignStart="@+id/team1" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Team 2"
+            style="@style/Base.TextAppearance.AppCompat.Title"
+            android:id="@+id/team2"
+            android:padding="5dp"
+            android:layout_marginRight="50dp"
+            android:textColor="#FFF"
+            android:layout_below="@+id/vs"
+            android:layout_alignStart="@+id/vs" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="LIVE SCORE"
+            android:id="@+id/scoreLink"
+            style="@style/Base.TextAppearance.AppCompat.Widget.Button"
+            android:clickable="true"
+            android:padding="5dp"
+            android:layout_alignTop="@+id/textView2"
+            android:layout_toStartOf="@+id/textView2"
+            android:layout_marginBottom="5dp"
+            android:textColor="#FFF"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="|"
+            android:padding="5dp"
+            style="@style/Base.TextAppearance.AppCompat.Widget.Button"
+            android:id="@+id/textView2"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="5dp"
+            android:textColor="#FFF"
+            android:textStyle="bold" />
+
+        <ImageButton
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:id="@+id/leftButton"
+            android:layout_centerVertical="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginLeft="10dp"
+            android:background="@drawable/ic_chevron_left" />
+
+        <ImageButton
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:id="@+id/rightButton"
+            android:layout_alignTop="@+id/leftButton"
+            android:layout_alignParentEnd="true"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/ic_chevron_right" />
+
+    </RelativeLayout>
+</RelativeLayout>

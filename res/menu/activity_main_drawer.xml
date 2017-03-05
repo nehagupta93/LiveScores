@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_football"
+            android:icon="@drawable/football_48"
+            android:title="Football"
+            />
+        <item
+            android:id="@+id/nav_cricket"
+            android:icon="@drawable/cricket_48"
+            android:title="Cricket" />
+    </group>
+
+</menu>
